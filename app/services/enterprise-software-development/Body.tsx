@@ -65,7 +65,7 @@ const Body = () => {
       <br></br><br></br>
       Our team handles everything — from backend architecture and APIs to frontend interfaces and seamless user experiences. We work fast, stay flexible, and keep you in the loop every step of the way. If you need software that feels like it was made just for you — because it was — let&apos;s build it together.
       <br></br><br></br>
-      Every project starts with a deep understanding of your goals, your users, and how your business works. We collaborate closely to translate that into software that&apos;s not just functional — but intuitive, efficient, and a joy to use. Whether you're a startup or an enterprise, we&apos;re here to turn your ideas into rock-solid, production-ready systems.
+      Every project starts with a deep understanding of your goals, your users, and how your business works. We collaborate closely to translate that into software that&apos;s not just functional — but intuitive, efficient, and a joy to use. Whether you&apos;re a startup or an enterprise, we&apos;re here to turn your ideas into rock-solid, production-ready systems.
       </h5>
         </div>
         <div className="rounded-2xl h-fit w-full md:w-1/2 bg-cover bg-center bg-no-repeat" ref={terminalRef}>

@@ -57,11 +57,11 @@ const Body = () => {
         <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-white">What We Do</h4>
         <h5 className="text-xl text-left">
-        We don't just build apps – we craft transformative mobile experiences. Whether you need a native iOS or Android app, a versatile cross-platform solution, or want to revitalize an existing mobile presence, we tailor our development to your unique vision and audience. No cookie-cutter apps. Just innovative, user-centric mobile solutions built to elevate your brand.
+        We don&apos;t just build apps – we craft transformative mobile experiences. Whether you need a native iOS or Android app, a versatile cross-platform solution, or want to revitalize an existing mobile presence, we tailor our development to your unique vision and audience. No cookie-cutter apps. Just innovative, user-centric mobile solutions built to elevate your brand.
       <br></br><br></br>
-      Our expert mobile strategists, designers, and developers guide you through the entire app lifecycle – from initial ideation and market research to UI/UX design, robust development, rigorous testing, and successful app store launch. We work as your dedicated mobile partner, ensuring transparency and alignment with your business objectives. If you need an app that captivates users, drives engagement, and delivers measurable results – because it's engineered to – let's build that digital future together.
+      Our expert mobile strategists, designers, and developers guide you through the entire app lifecycle – from initial ideation and market research to UI/UX design, robust development, rigorous testing, and successful app store launch. We work as your dedicated mobile partner, ensuring transparency and alignment with your business objectives. If you need an app that captivates users, drives engagement, and delivers measurable results – because it&apos;s engineered to – let&apos;s build that digital future together.
       <br></br><br></br>
-      Every mobile app project begins with a profound understanding of your target users, your market positioning, and your growth ambitions. We collaborate closely to translate these insights into a mobile application that's not just technologically sound – but also intuitive, scalable, and a catalyst for expanding your reach and impact. Whether you're a startup aiming to disrupt or an enterprise seeking to innovate, we're here to help you harness the full potential of mobile technology.
+      Every mobile app project begins with a profound understanding of your target users, your market positioning, and your growth ambitions. We collaborate closely to translate these insights into a mobile application that&apos;s not just technologically sound – but also intuitive, scalable, and a catalyst for expanding your reach and impact. Whether you&apos;re a startup aiming to disrupt or an enterprise seeking to innovate, we&apos;re here to help you harness the full potential of mobile technology.
       </h5>
         </div>
         <div className=" h-full w-full md:w-1/2 ">
@@ -75,7 +75,7 @@ const Body = () => {
         <div className="flex flex-col md:flex-row justify-between gap-6 ">
         <h2 className="text-lg pt-8 md:pt-0 md:text-xl flex-shrink-0 text-center md:text-left">The Principles Powering Our Mobile Innovation</h2>
         <h5 className="text-3xl text-center md:text-justify md:text-4xl w-full md:w-[65%] leading-tight md:leading-[1.1] ">
-        Exceptional mobile apps aren't just coded – they're strategically designed with user empathy, cutting-edge technology, and a clear vision for market success. From concept to launch and beyond, we follow principles that prioritize user engagement, technical excellence, and sustainable app growth.
+        Exceptional mobile apps aren&apos;t just coded – they&apos;re strategically designed with user empathy, cutting-edge technology, and a clear vision for market success. From concept to launch and beyond, we follow principles that prioritize user engagement, technical excellence, and sustainable app growth.
         </h5>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">

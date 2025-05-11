@@ -10,9 +10,7 @@ import Spline from '@splinetool/react-spline';
 // Removed: useInView as it was for the terminal animation
 
 const Body = () => {
-  // Removed: terminalRef and isInView as the terminal component is removed for this example
-  // If you intend to keep the Spline animation tied to view, you'd re-add useInView and its ref.
-  // For simplicity, I'm assuming the Spline component is always visible or handles its own loading.
+  
 
   return (
     <div className="flex flex-col">
@@ -62,11 +60,11 @@ const Body = () => {
         <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-white">What We Do</h4>
         <h5 className="text-xl text-left">
-        We don't just manage servers — we engineer modern, resilient cloud infrastructure and streamlined DevOps practices for your business. Whether you're migrating to the cloud, optimizing existing environments, or building cloud-native applications, we craft tailored solutions that enhance agility, scalability, and security. No vendor lock-in. No over-provisioning. Just efficient, automated systems built to accelerate your innovation.
+        We don&apos;t just manage servers — we engineer modern, resilient cloud infrastructure and streamlined DevOps practices for your business. Whether you&apos;re migrating to the cloud, optimizing existing environments, or building cloud-native applications, we craft tailored solutions that enhance agility, scalability, and security. No vendor lock-in. No over-provisioning. Just efficient, automated systems built to accelerate your innovation.
       <br></br><br></br>
-      Our expert team handles the full cloud and DevOps lifecycle — from strategic planning and infrastructure automation to CI/CD implementation and ongoing managed services. We work collaboratively, embrace automation, and maintain full transparency throughout the process. If you need cloud solutions and DevOps maturity that truly empower your development and operations — because they’re designed to — let’s build it together.
+      Our expert team handles the full cloud and DevOps lifecycle — from strategic planning and infrastructure automation to CI/CD implementation and ongoing managed services. We work collaboratively, embrace automation, and maintain full transparency throughout the process. If you need cloud solutions and DevOps maturity that truly empower your development and operations — because they&apos;re designed to — let’s build it together.
       <br></br><br></br>
-      Every engagement starts with a deep dive into your operational needs, technical landscape, and strategic vision. We partner closely with you to implement cloud architectures and DevOps processes that are not just functional — but also cost-effective, secure, and future-proof. Whether you're a startup needing to scale fast or an enterprise seeking operational excellence, we're here to transform your infrastructure into a strategic asset.
+      Every engagement starts with a deep dive into your operational needs, technical landscape, and strategic vision. We partner closely with you to implement cloud architectures and DevOps processes that are not just functional — but also cost-effective, secure, and future-proof. Whether you&apos;re a startup needing to scale fast or an enterprise seeking operational excellence, we&apos;re here to transform your infrastructure into a strategic asset.
       </h5>
         </div>
         <div className=" h-full w-full md:w-1/2 "> {/* Removed ref={terminalRef} as it's not used */}
@@ -80,7 +78,7 @@ const Body = () => {
         <div className="flex flex-col md:flex-row justify-between gap-6 ">
         <h2 className="text-lg pt-8 md:pt-0 md:text-xl flex-shrink-0 text-center md:text-left">The Principles Driving Our Cloud & DevOps Solutions</h2>
         <h5 className="text-3xl text-center md:text-justify md:text-4xl w-full md:w-[65%] leading-tight md:leading-[1.1] ">
-        Effective cloud and DevOps aren't just implemented — they're engineered with foresight, automation, and security at their core. From architecture to operations, we follow principles that prioritize resilience, efficiency, and continuous improvement, ensuring every solution we deliver enables speed and stability.
+        Effective cloud and DevOps aren&apos;t just implemented — they&apos;re engineered with foresight, automation, and security at their core. From architecture to operations, we follow principles that prioritize resilience, efficiency, and continuous improvement, ensuring every solution we deliver enables speed and stability.
         </h5>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
@@ -94,7 +92,7 @@ const Body = () => {
       Automation First
     </h5>
     <p className="text-sm text-black/65 text-left">
-      We don't just configure systems — we codify them. Every infrastructure decision is grounded in automation, ensuring consistency, scalability, and rapid recovery. It's cloud that works smarter, not harder.
+      We don&apos;t just configure systems — we codify them. Every infrastructure decision is grounded in automation, ensuring consistency, scalability, and rapid recovery. It&apos;s cloud that works smarter, not harder.
     </p>
   </div>
 </div>
@@ -124,7 +122,7 @@ const Body = () => {
       Security by Design
     </h5>
     <p className="text-sm text-black/65 text-left">
-      Off-the-shelf security isn't enough. We embed security into every layer of your cloud infrastructure and development lifecycle, ensuring your systems are protected proactively, not reactively.
+      Off-the-shelf security isn&apos;t enough. We embed security into every layer of your cloud infrastructure and development lifecycle, ensuring your systems are protected proactively, not reactively.
     </p>
   </div>
 </div>
