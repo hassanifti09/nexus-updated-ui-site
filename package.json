@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --legacy-peer-deps",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-build": "npm install --legacy-peer-deps && next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@motion-canvas/core": "^3.17.2",
