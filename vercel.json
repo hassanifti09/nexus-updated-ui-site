@@ -1,5 +1,1 @@
-{
-  "buildCommand": "npm install --legacy-peer-deps && npm run build",
-  "ignoreCommand": "echo 'Skipping'",
-  "installCommand": "echo 'Custom install handled in buildCommand'"
-}
+
