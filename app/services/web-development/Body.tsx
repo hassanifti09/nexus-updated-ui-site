@@ -58,11 +58,11 @@ const Body = () => {
         <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-black">What We Do</h4>
         <h5 className="text-xl text-left">
-        We don't just build websites – we craft digital experiences that are both beautiful and exceptionally functional. Whether you need a captivating marketing site, a robust e-commerce platform, or a dynamic web application, we tailor every pixel and line of code to reflect your brand and engage your audience. No cookie-cutter templates. Just stunning, high-performing websites designed to achieve your business objectives.
+        We don&apos;t just build websites – we craft digital experiences that are both beautiful and exceptionally functional. Whether you need a captivating marketing site, a robust e-commerce platform, or a dynamic web application, we tailor every pixel and line of code to reflect your brand and engage your audience. No cookie-cutter templates. Just stunning, high-performing websites designed to achieve your business objectives.
       <br></br><br></br>
       Our talented team handles the entire web development lifecycle – from initial strategy and UI/UX design to frontend and backend development, and ongoing maintenance. We collaborate closely with you, ensuring a transparent and agile process. If you need a website that not only looks incredible but also delivers tangible results – because it’s meticulously crafted to do so – let’s create your online masterpiece together.
       <br></br><br></br>
-      Every project begins with a creative vision and a strategic understanding of your market and users. We translate this into websites that are not only visually striking but also intuitive to navigate, fast-loading, and optimized for conversions. Whether you're launching a new brand or revitalizing an existing online presence, we're here to build a beautiful and functional website that sets you apart.
+      Every project begins with a creative vision and a strategic understanding of your market and users. We translate this into websites that are not only visually striking but also intuitive to navigate, fast-loading, and optimized for conversions. Whether you&apos;re launching a new brand or revitalizing an existing online presence, we&apos;re here to build a beautiful and functional website that sets you apart.
       </h5>
         </div>
         <div className=" h-full w-full md:w-1/2 ">
@@ -94,7 +94,7 @@ const Body = () => {
         <div className="flex flex-col md:flex-row justify-between gap-6 ">
         <h2 className="text-lg pt-8 md:pt-0 md:text-xl flex-shrink-0 text-center md:text-left">The Principles Behind Every Beautiful<br></br> & Functional Website</h2>
         <h5 className="text-3xl text-center md:text-justify md:text-4xl w-full md:w-[65%] leading-tight md:leading-[1.1] ">
-        Great websites aren't just coded – they're meticulously designed and engineered with creativity, precision, and user delight in mind. From concept to deployment, we follow principles that prioritize stunning aesthetics, seamless functionality, and lasting digital impact.
+        Great websites aren&apos;t just coded – they&apos;re meticulously designed and engineered with creativity, precision, and user delight in mind. From concept to deployment, we follow principles that prioritize stunning aesthetics, seamless functionality, and lasting digital impact.
         </h5>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
@@ -108,7 +108,7 @@ const Body = () => {
       Design That Captivates
     </h5>
     <p className="text-sm text-black/65 text-left">
-      We don't just make sites look good – we create immersive user experiences. Every design decision is purposeful, focusing on visual appeal, brand consistency, and intuitive navigation to engage and convert visitors.
+      We don&apos;t just make sites look good – we create immersive user experiences. Every design decision is purposeful, focusing on visual appeal, brand consistency, and intuitive navigation to engage and convert visitors.
     </p>
   </div>
 </div>
@@ -138,7 +138,7 @@ const Body = () => {
       Solutions That Evolve
     </h5>
     <p className="text-sm text-black/65 text-left">
-      Cookie-cutter sites aren't our style. We build custom, scalable web solutions with clean code, ensuring your site can grow with your business and adapt to future needs, all while being easy to manage.
+      Cookie-cutter sites aren&apos;t our style. We build custom, scalable web solutions with clean code, ensuring your site can grow with your business and adapt to future needs, all while being easy to manage.
     </p>
   </div>
 </div>

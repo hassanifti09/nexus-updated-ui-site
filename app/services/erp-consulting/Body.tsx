@@ -57,11 +57,11 @@ const Body = () => {
         <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-white">What We Do</h4>
         <h5 className="text-xl text-left">
-        We don't just install software – we transform your core business operations with strategic ERP solutions. Whether you're implementing a new system, upgrading an existing one, or seeking to optimize current processes, we tailor ERP functionality to your unique business model. No one-size-fits-all approaches. Just integrated, efficient systems built to unify your enterprise.
+        We don&apos;t just install software – we transform your core business operations with strategic ERP solutions. Whether you&apos;re implementing a new system, upgrading an existing one, or seeking to optimize current processes, we tailor ERP functionality to your unique business model. No one-size-fits-all approaches. Just integrated, efficient systems built to unify your enterprise.
       <br></br><br></br>
       Our expert consultants guide you through the entire ERP journey – from initial needs assessment and vendor selection to configuration, data migration, user training, and post-launch support. We work as your trusted partner, ensuring transparency and alignment with your strategic goals. If you need an ERP that centralizes data, streamlines workflows, and empowers your teams – because it’s designed to – let’s build that operational backbone together.
       <br></br><br></br>
-      Every ERP project begins with a profound understanding of your end-to-end processes, your industry specifics, and your growth ambitions. We collaborate closely to translate these insights into an ERP system that's not just powerful – but also intuitive, scalable, and a catalyst for informed decision-making. Whether you're a growing SME or a large enterprise, we're here to help you harness the full potential of your ERP investment.
+      Every ERP project begins with a profound understanding of your end-to-end processes, your industry specifics, and your growth ambitions. We collaborate closely to translate these insights into an ERP system that&apos;s not just powerful – but also intuitive, scalable, and a catalyst for informed decision-making. Whether you&apos;re a growing SME or a large enterprise, we&apos;re here to help you harness the full potential of your ERP investment.
       </h5>
         </div>
         <div className=" h-full w-full md:w-1/2 ">
@@ -75,7 +75,7 @@ const Body = () => {
         <div className="flex flex-col md:flex-row justify-between gap-6 ">
         <h2 className="text-lg pt-8 md:pt-0 md:text-xl flex-shrink-0 text-center md:text-left">The Principles Guiding Our ERP Excellence</h2>
         <h5 className="text-3xl text-center md:text-justify md:text-4xl w-full md:w-[65%] leading-tight md:leading-[1.1] ">
-        Successful ERP solutions aren't just implemented – they're strategically architected with deep business insight, user focus, and long-term vision. From planning to ongoing optimization, we follow principles that prioritize operational efficiency, data integrity, and sustainable business growth.
+        Successful ERP solutions aren&apos;t just implemented – they&apos;re strategically architected with deep business insight, user focus, and long-term vision. From planning to ongoing optimization, we follow principles that prioritize operational efficiency, data integrity, and sustainable business growth.
         </h5>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
@@ -89,7 +89,7 @@ const Body = () => {
       Strategic Process Alignment
     </h5>
     <p className="text-sm text-black/65 text-left">
-      We don't just fit your business into software – we align the ERP to your optimized processes. Every configuration is driven by your strategic goals, ensuring the system enhances workflows and delivers tangible business value.
+      We don&apos;t just fit your business into software – we align the ERP to your optimized processes. Every configuration is driven by your strategic goals, ensuring the system enhances workflows and delivers tangible business value.
     </p>
   </div>
 </div>

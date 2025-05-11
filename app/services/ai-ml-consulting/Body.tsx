@@ -1,21 +1,16 @@
 "use client";
-import React, { useRef } from 'react'
+import React from 'react'
 // Updated Lucide icons for AI/ML
 import { Brain, Network, Scaling, TrendingUp } from 'lucide-react';
 // Updated Fa icons for AI/ML principles
 import { FaBrain, FaSyncAlt, FaShieldAlt } from 'react-icons/fa' 
 import Spline from '@splinetool/react-spline';
 
-import {
-    AnimatedSpan,
-    Terminal,
-    TypingAnimation,
-  } from "@/components/magicui/terminal";
-import { useInView } from 'framer-motion';
+
+
 
 const Body = () => {
-  const terminalRef = useRef(null);
-  const isInView = useInView(terminalRef, { once: true, margin: '-100px' });
+  
 
   return (
     <div className="flex flex-col">
@@ -65,14 +60,14 @@ const Body = () => {
         <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-white">What We Do</h4>
         <h5 className="text-xl text-left">
-        We don't just analyze data — we unlock its strategic value for your business. Whether you're seeking predictive insights, intelligent automation, or innovative AI-driven products, we craft bespoke AI/ML solutions tailored to your unique challenges and opportunities. No generic models. No black boxes. Just transparent, impactful AI built to drive your growth.
+        We don&apos;t just analyze data — we unlock its strategic value for your business. Whether you&apos;re seeking predictive insights, intelligent automation, or innovative AI-driven products, we craft bespoke AI/ML solutions tailored to your unique challenges and opportunities. No generic models. No black boxes. Just transparent, impactful AI built to drive your growth.
       <br></br><br></br>
-      Our expert team handles the full AI lifecycle — from data strategy and model development to deployment and operationalization. We work collaboratively, stay agile, and maintain full transparency throughout the engagement. If you need AI that truly understands and transforms your business — because it’s designed to — let’s innovate together.
+      Our expert team handles the full AI lifecycle — from data strategy and model development to deployment and operationalization. We work collaboratively, stay agile, and maintain full transparency throughout the engagement. If you need AI that truly understands and transforms your business — because it&apos;s designed to — let&apos;s innovate together.
       <br></br><br></br>
-      Every engagement begins with a thorough understanding of your strategic objectives, data assets, and operational context. We partner closely with you to translate these insights into AI solutions that are not just powerful — but also practical, ethical, and seamlessly integrated. Whether you're starting your AI journey or scaling advanced initiatives, we're here to turn your data into decisive advantages.
+      Every engagement begins with a thorough understanding of your strategic objectives, data assets, and operational context. We partner closely with you to translate these insights into AI solutions that are not just powerful — but also practical, ethical, and seamlessly integrated. Whether you&apos;re starting your AI journey or scaling advanced initiatives, we&apos;re here to turn your data into decisive advantages.
       </h5>
         </div>
-        <div className=" h-full w-full md:w-1/2 " ref={terminalRef}>
+        <div className=" h-full w-full md:w-1/2 " >
         <Spline
         scene="https://prod.spline.design/QypHxO30Qc7ZrMLF/scene.splinecode" className="scale-[220%]" 
       />
@@ -83,7 +78,7 @@ const Body = () => {
         <div className="flex flex-col md:flex-row justify-between gap-6 ">
         <h2 className="text-lg pt-8 md:pt-0 md:text-xl flex-shrink-0 text-center md:text-left">The Principles Guiding Our AI/ML Expertise</h2>
         <h5 className="text-3xl text-center md:text-justify md:text-4xl w-full md:w-[65%] leading-tight md:leading-[1.1] ">
-        Powerful AI isn't just developed — it's cultivated with insight, rigor, and responsibility. From strategy to deployment, we follow principles that prioritize accuracy, ethical considerations, and sustainable value, ensuring every solution we deliver drives meaningful and lasting impact.
+        Powerful AI isn&apos;t just developed — it&apos;s cultivated with insight, rigor, and responsibility. From strategy to deployment, we follow principles that prioritize accuracy, ethical considerations, and sustainable value, ensuring every solution we deliver drives meaningful and lasting impact.
         </h5>
       </div>
       <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
@@ -97,7 +92,7 @@ const Body = () => {
       Insight-Driven Strategy
     </h5>
     <p className="text-sm text-black/65 text-left">
-      We don't just build models — we solve critical business challenges. Every solution is grounded in deep data understanding, targeted to deliver actionable insights and measurable ROI. It's AI that provides clarity now and competitive advantage later.
+      We don&apos;t just build models — we solve critical business challenges. Every solution is grounded in deep data understanding, targeted to deliver actionable insights and measurable ROI. It&apos;s AI that provides clarity now and competitive advantage later.
     </p>
   </div>
 </div>

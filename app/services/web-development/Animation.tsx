@@ -1,9 +1,7 @@
 import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
 
-// Import specific icons from react-icons sub-packages
-// You'll need to find the appropriate icons from the library.
-// Examples:
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt } from 'react-icons/fa';
+
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiNextdotjs, SiVite } from 'react-icons/si'; // Simple Icons are great for brand logos
 import { DiJavascript1 } from 'react-icons/di'; // Devicons is another good source
 
@@ -28,21 +26,7 @@ export function OrbitingCirclesDemo() {
   return (
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
       <OrbitingCircles className="text-2xl">
-        {/* 
-          When using react-icons, the 'iconSize' prop from OrbitingCircles 
-          might not directly apply. You'll likely control size via the 'size' prop
-          on the icon component itself, or through CSS.
-          Let's assume OrbitingCircles wraps these and handles size, 
-          or you might need to adjust how 'iconSize' is used.
-          
-          If OrbitingCircles passes 'iconSize' as a prop to its children, 
-          and the children are react-icon components, they might ignore it 
-          unless they are wrapped.
-          
-          For simplicity, let's assume OrbitingCircles passes it as `size` 
-          or we manually set the size.
-          Most react-icons components accept a `size` prop and `className` for styling.
-        */}
+        
         <TechIcons.ReactJs className="text-blue-500" size="50px"/> {/* Color applied via Tailwind text color */}
         <TechIcons.NodeJs className="text-green-500" size="50px"/>
         <TechIcons.Javascript className="text-yellow-400" size="50px"/>
