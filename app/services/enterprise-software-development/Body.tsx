@@ -17,20 +17,20 @@ const Body = () => {
   return (
     <div className="flex flex-col">
       <div className="p-5 font-light tracking-tight leading-tight text-black/85">
-        <div className="p-5 md:p-10 rounded-2xl bg-white flex flex-col md:flex-row justify-between gap-5 md:gap-0">
+        <div className="p-5 lg:p-10 rounded-2xl bg-white flex flex-col lg:flex-row justify-between gap-5 lg:gap-0">
             <div className="w-1/5">
-                <h2 className="text-3xl md:text-4xl mb-10 md:mb-0">The Nexus Process</h2>
+                <h2 className="text-3xl lg:text-4xl mb-10 lg:mb-0">The Nexus Process</h2>
             </div>
-            <div className="md:w-3/5 flex flex-col gap-5">
-      <div className="flex flex-col md:flex-row gap-5">
-        <div className="p-5 md:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
+            <div className="lg:w-3/5 flex flex-col gap-5">
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="p-5 lg:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
           
           <Atom className="h-8 w-8 group-hover:text-white/90 text-stone-700" />
           <h3 className="text-2xl group-hover:text-white/90 font-medium">Plan</h3>
           <p className="group-hover:text-white/90">We dive deep into your business, users, and workflows to define exactly what the software needs to do — and why. This includes mapping out features, architecture, and tech stacks aligned with your goals.</p>
         </div>
 
-        <div className="p-5 md:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
+        <div className="p-5 lg:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
           
           <Compass className="h-8 w-8 group-hover:text-white/90 text-stone-700" />
           <h3 className="text-2xl group-hover:text-white/90 font-medium">Architect</h3>
@@ -38,15 +38,15 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5">
-        <div className="p-5 md:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="p-5 lg:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
           
           <Layers className="h-8 w-8 group-hover:text-white/90 text-stone-700" />
           <h3 className="text-2xl group-hover:text-white/90 font-medium">Develop</h3>
           <p className="group-hover:text-white/90">We build your product using clean, modular code and proven frameworks. Our agile approach means fast iterations, constant communication, and full transparency throughout the process.</p>
         </div>
 
-        <div className="p-5 md:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
+        <div className="p-5 lg:w-1/2 border border-stone-200 rounded-xl bg-stone-100 flex flex-col gap-5 group hover:bg-stone-900 hover:border-stone-900">
           
           <Target className="h-8 w-8 group-hover:text-white/90 text-stone-700" />
           <h3 className="text-2xl group-hover:text-white/90 font-medium">Deploy & Evolve</h3>
@@ -57,8 +57,8 @@ const Body = () => {
         </div>
     </div>
     <div className=" pb-5 px-5">
-        <div className="flex  md:p-5 flex-col md:flex-row items-center font-light bg-white rounded-2xl  tracking-tight leading-tight text-black/85 gap-10">
-        <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
+        <div className="flex  lg:p-5 flex-col lg:flex-row items-center font-light bg-white rounded-2xl  tracking-tight leading-tight text-black/85 gap-10">
+        <div className="lg:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-black">What We Do</h4>
         <h5 className="text-xl text-left">
         We don&apos;t just build software — we build the backbone of your business. Whether you&apos;re launching a product, automating internal workflows, or modernizing legacy systems, we craft scalable, high-performance solutions that are tailored to your exact needs. No templates. No shortcuts. Just clean, reliable code built to grow with you.
@@ -68,7 +68,7 @@ const Body = () => {
       Every project starts with a deep understanding of your goals, your users, and how your business works. We collaborate closely to translate that into software that&apos;s not just functional — but intuitive, efficient, and a joy to use. Whether you&apos;re a startup or an enterprise, we&apos;re here to turn your ideas into rock-solid, production-ready systems.
       </h5>
         </div>
-        <div className="rounded-2xl h-fit w-full md:w-1/2 bg-cover bg-center bg-no-repeat" ref={terminalRef}>
+        <div className="rounded-2xl h-fit w-full lg:w-1/2 bg-cover bg-center bg-no-repeat" ref={terminalRef}>
         {isInView && (
         <Terminal>
       <TypingAnimation>&gt; nexus init --project custom-software</TypingAnimation>
@@ -135,15 +135,15 @@ const Body = () => {
     </div>
     </div>
     <div className="flex flex-col font-light py-5 pb-10 px-10 tracking-tight leading-tight text-black/85 gap-16">
-        <div className="flex flex-col md:flex-row justify-between gap-6 ">
-        <h2 className="text-lg pt-8 md:pt-0 md:text-xl flex-shrink-0 text-center md:text-left">The Principles Behind Every Line of Code</h2>
-        <h5 className="text-3xl text-center md:text-justify md:text-4xl w-full md:w-[65%] leading-tight md:leading-[1.1] ">
+        <div className="flex flex-col lg:flex-row justify-between gap-6 ">
+        <h2 className="text-lg pt-8 lg:pt-0 lg:text-xl flex-shrink-0 text-center lg:text-left">The Principles Behind Every Line of Code</h2>
+        <h5 className="text-3xl text-center lg:text-justify lg:text-4xl w-full lg:w-[65%] leading-tight lg:leading-[1.1] ">
         Great software isn&apos;t just built — it&apos;s engineered with care, clarity, and purpose. From planning to deployment, we follow principles that prioritize performance, maintainability, and long-term impact, ensuring every product we deliver stands the test of scale and time.
         </h5>
       </div>
-      <div className="flex flex-col md:flex-row gap-10 items-stretch justify-center">
+      <div className="flex flex-col lg:flex-row gap-10 items-stretch justify-center">
         {/* Card 1 */}
-<div className="w-full md:w-1/3 bg-white rounded-2xl p-6 flex flex-col gap-5">
+<div className="w-full lg:w-1/3 bg-white rounded-2xl p-6 flex flex-col gap-5">
   <div className="bg-gray-100 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
     <FaCode className="text-5xl text-black/70" />
   </div>
@@ -158,7 +158,7 @@ const Body = () => {
 </div>
 
 {/* Card 2 */}
-<div className="w-full md:w-1/3 bg-white rounded-2xl p-6 flex flex-col gap-5">
+<div className="w-full lg:w-1/3 bg-white rounded-2xl p-6 flex flex-col gap-5">
   <div className="bg-gray-100 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
     <FaSyncAlt className="text-xl text-black/70" />
   </div>
@@ -173,7 +173,7 @@ const Body = () => {
 </div>
 
 {/* Card 3 */}
-<div className="w-full md:w-1/3 bg-white rounded-2xl p-6 flex flex-col gap-5">
+<div className="w-full lg:w-1/3 bg-white rounded-2xl p-6 flex flex-col gap-5">
   <div className="bg-gray-100 rounded-lg p-4 w-16 h-16 flex items-center justify-center">
     <FaCogs className="text-4xl text-black/70" />
   </div>
