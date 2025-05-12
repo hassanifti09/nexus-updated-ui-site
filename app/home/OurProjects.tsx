@@ -12,8 +12,7 @@ const projects = [
     title: 'Predictamaint',
     description:
       "Our Client OSDCORB Tyres, a leading tyre manufacturer, faced frequent unplanned equipment downtime...",
-    imageUrl: '/assets/grad1.jpg', // Make sure this path is correct
-    // Ensure ProjectSection component can handle this array of strings
+    imageUrl: '/assets/grad1.jpg',
     technologies: [{ text: 'React', variant: 'white' },
       { text: 'Next.js', variant: 'black' },
       { text: 'TypeScript', variant: 'white' },
@@ -21,13 +20,14 @@ const projects = [
       { text: 'Next.js', variant: 'black' },
       { text: 'TypeScript', variant: 'white' },
       { text: 'Node.js', variant: 'black' }],
+    route: '/projects/predictamaint',
   },
   {
     id: '02',
     title: 'SmartLogix',
     description:
       'A logistics optimization system using route prediction, fleet management, and live tracking analytics.',
-    imageUrl: '/assets/grad1.jpg', // Use different images if available
+    imageUrl: '/assets/grad1.jpg',
     technologies: [{ text: 'React', variant: 'white' },
       { text: 'Next.js', variant: 'black' },
       { text: 'TypeScript', variant: 'white' },
@@ -35,15 +35,14 @@ const projects = [
       { text: 'Next.js', variant: 'black' },
       { text: 'TypeScript', variant: 'white' },
       { text: 'Node.js', variant: 'black' }],
-
-
+    route: '/projects/smartlogix',
   },
   {
     id: '03',
     title: 'InsightPulse',
     description:
       'We helped a healthcare startup analyze large-scale medical data to drive predictive diagnostics.',
-    imageUrl: '/assets/grad1.jpg', // Use different images if available
+    imageUrl: '/assets/grad1.jpg',
     technologies: [{ text: 'React', variant: 'white' },
       { text: 'Next.js', variant: 'black' },
       { text: 'TypeScript', variant: 'white' },
@@ -51,6 +50,7 @@ const projects = [
       { text: 'Next.js', variant: 'black' },
       { text: 'TypeScript', variant: 'white' },
       { text: 'Node.js', variant: 'black' }],
+    route: '/projects/insightpulse',
   },
   // Add more projects as needed
 ];
@@ -119,6 +119,7 @@ const OurProjects = () => {
                   title={project.title}
                   description={project.description}
                   dangerousHTML={true}
+                  route={project.route}
                   imageUrl={project.imageUrl}
                 />
               </div>
