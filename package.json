@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ebay/nice-modal-react": "^1.2.13",
     "@motion-canvas/core": "^3.17.2",
     "@radix-ui/react-accordion": "^1.2.8",
     "@radix-ui/react-separator": "^1.1.4",

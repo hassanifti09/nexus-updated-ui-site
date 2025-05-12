@@ -10,9 +10,10 @@ interface ServiceProps {
   description: string;
   imageUrl: string;
   dangerousHTML?: boolean;
+  route: string;
   
 }
-const Service = ({ number, title, description, imageUrl, dangerousHTML }: ServiceProps) => {
+const Service = ({ number, title, description, imageUrl, dangerousHTML, route }: ServiceProps) => {
   return (
     <section className="text-black bg-white px-4 md:px-5 relative overflow-hidden group">
       <Separator className="my-10 h-[]" />
@@ -83,7 +84,7 @@ const Service = ({ number, title, description, imageUrl, dangerousHTML }: Servic
             </motion.div>
           </div>
           <div className="w-fit  md:mt-8">
-            <Button route="/" variant="black" text="Learn More" icon />
+            <Button route={route} variant="black" text="Learn More" icon />
           </div>
         </motion.div>
       </div>

@@ -67,7 +67,7 @@ const Body = () => {
       Every engagement begins with a thorough understanding of your strategic objectives, data assets, and operational context. We partner closely with you to translate these insights into AI solutions that are not just powerful — but also practical, ethical, and seamlessly integrated. Whether you&apos;re starting your AI journey or scaling advanced initiatives, we&apos;re here to turn your data into decisive advantages.
       </h5>
         </div>
-        <div className=" h-full w-full md:w-1/2 " >
+        <div className=" h-full w-full md:w-1/2 overflow-hidden" >
         <Spline
         scene="https://prod.spline.design/QypHxO30Qc7ZrMLF/scene.splinecode" className="scale-[220%]" 
       />

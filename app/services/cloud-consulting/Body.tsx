@@ -67,7 +67,7 @@ const Body = () => {
       Every engagement starts with a deep dive into your operational needs, technical landscape, and strategic vision. We partner closely with you to implement cloud architectures and DevOps processes that are not just functional — but also cost-effective, secure, and future-proof. Whether you&apos;re a startup needing to scale fast or an enterprise seeking operational excellence, we&apos;re here to transform your infrastructure into a strategic asset.
       </h5>
         </div>
-        <div className=" h-full w-full md:w-1/2 "> {/* Removed ref={terminalRef} as it's not used */}
+        <div className=" h-full w-full md:w-1/2 overflow-hidden"> {/* Removed ref={terminalRef} as it's not used */}
         <Spline
         scene="https://prod.spline.design/NTSKHsQEzoqdWfeI/scene.splinecode" className="scale-[220%]" 
       />
