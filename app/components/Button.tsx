@@ -20,9 +20,15 @@ const Button = ({ route, variant = 'black', text, children, icon = false }: Butt
     : 'text-white/80 border-[1px] border-white/40 bg-white/20 backdrop-blur-lg'
 
   const router = useRouter();
-
+  
   const handleClick = () => {
-    router.push(route);
+    // Get the current pathname
+    const pathname = window.location.pathname;
+    
+    // Only navigate if we're not already on the target route
+    if (pathname !== route) {
+      router.push(route);
+    }
   };
 
   return (

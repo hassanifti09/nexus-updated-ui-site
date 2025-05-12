@@ -4,6 +4,74 @@ import React, { useState, useEffect } from 'react'
 import Button from './Button'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link';
+import NiceModal, { useModal } from '@ebay/nice-modal-react';
+
+// Services Modal Component
+const ServicesModal = NiceModal.create(() => {
+  const modal = useModal();
+  
+  // Services data
+  const services = [
+    { title: 'Cloud Consulting', path: '/services/cloud-consulting', image: '/assets/cloud-consulting.webp' },
+    { title: 'Software Development', path: '/services/enterprise-software-development', image: '/assets/software-development.webp' },
+    { title: 'Web Development', path: '/services/web-development', image: '/assets/web-development.jpeg' },
+    { title: 'AI & ML Consulting', path: '/services/ai-ml-consulting', image: '/assets/artificial-intelligence.jpg' },
+    { title: 'Mobile Development', path: '/services/mobile-development', image: '/assets/mobile-development.jpeg' },
+    { title: 'ERP Consulting', path: '/services/erp-consulting', image: '/assets/erp-consulting.jpg' },
+  ];
+  
+  // Prevent scrolling when modal is open
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    }
+  }, []);
+  
+  return (
+    <div 
+      className={`fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-8 ${modal.visible ? 'opacity-100' : 'opacity-0'}`}
+      onClick={() => modal.hide()}
+    >
+      {/* Close button */}
+      <button 
+        onClick={() => modal.hide()} 
+        className="absolute top-8 right-8 text-white p-2 hover:text-white/80 z-10"
+      >
+        <X size={32} />
+      </button>
+      
+      {/* Services Grid */}
+      <div 
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {services.map((service, index) => (
+          <Link 
+            href={service.path} 
+            key={index}
+            className="group"
+            onClick={() => modal.hide()}
+          >
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+              <div className="h-48 relative overflow-hidden">
+                <Image 
+                  src={service.image} 
+                  alt={service.title}
+                  fill
+                  className="object-cover transition-all duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-xl font-medium text-black">{service.title}</h3>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+});
 
 const DarkHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,23 +110,18 @@ const DarkHeader = () => {
                 <Link href="/about#our-values" className="block px-4 py-2 text-black cursor-pointer">Our Values</Link>
               </div>
             </div>
-            <div className="relative group flex flex-col items-center">
-              <div className="hover:text-black/80">Services</div>
-              <div className="absolute mt-12 text-center w-48 bg-white/95 backdrop-blur-sm  rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link href="/services" className="block px-4 py-2 text-black cursor-pointer">Cloud Consulting</Link>
-                <Link href="/services" className="block px-4 py-2 text-black cursor-pointer">Software Development</Link>
-                <Link href="/services" className="block px-4 py-2 text-black cursor-pointer">Web Development</Link>
-                <Link href="/services" className="block px-4 py-2 text-black cursor-pointer">AI & ML Consulting</Link>
-                <Link href="/services" className="block px-4 py-2 text-black cursor-pointer">Mobile Development</Link>
-                <Link href="/services" className="block px-4 py-2 text-black cursor-pointer">ERP Consulting</Link>
-              </div>
+            <div 
+              className="cursor-pointer hover:text-black/80"
+              onClick={() => NiceModal.show(ServicesModal)}
+            >
+              Services
             </div>
             <Link href="/#projects" className="hover:text-black/80">Projects</Link>  
           </div>
         </div>
         <div className="w-[20%] flex items-center justify-end">
           <div className="w-min">
-            <Button variant="white" route="/" text="Contact"/>
+            <Button variant="white" route="/contact" text="Contact"/>
           </div>
         </div>
       </div>
@@ -85,10 +148,18 @@ const DarkHeader = () => {
           <div className="h-full flex flex-col items-center justify-center space-y-8 text-black font-light">
             <Link href="/" className="text-3xl hover:text-black/80">Home</Link>
             <Link href="/about" className="text-3xl hover:text-black/80">About</Link>
-            <Link href="/services" className="text-3xl hover:text-black/80">Services</Link>
+            <div 
+              className="text-3xl hover:text-black/80 cursor-pointer"
+              onClick={() => {
+                setIsMenuOpen(false); // Close mobile menu
+                NiceModal.show(ServicesModal); // Show services modal
+              }}
+            >
+              Services
+            </div>
             <Link href="/#projects" className="text-3xl hover:text-black/80">Projects</Link>
             <div className="pt-8">
-              <Button variant="white" route="/" text="Contact"/>
+              <Button variant="white" route="/contact" text="Contact"/>
             </div>
           </div>
         </div>

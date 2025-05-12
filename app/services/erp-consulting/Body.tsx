@@ -64,7 +64,7 @@ const Body = () => {
       Every ERP project begins with a profound understanding of your end-to-end processes, your industry specifics, and your growth ambitions. We collaborate closely to translate these insights into an ERP system that&apos;s not just powerful – but also intuitive, scalable, and a catalyst for informed decision-making. Whether you&apos;re a growing SME or a large enterprise, we&apos;re here to help you harness the full potential of your ERP investment.
       </h5>
         </div>
-        <div className=" h-full w-full md:w-1/2 ">
+        <div className=" h-full w-full md:w-1/2 overflow-hidden">
         <Spline
         scene="https://prod.spline.design/9arwXV-xt3ZI2ItU/scene.splinecode" className="scale-[220%]" 
       />

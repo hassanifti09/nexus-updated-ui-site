@@ -52,7 +52,7 @@ const Body = () => {
     </div>
         </div>
     </div>
-    <div className=" pb-5 px-5">
+    <div className=" pb-5 px-5 overflow-hidden">
         <div className="flex bg-black  md:p-5 flex-col md:flex-row items-center font-light  rounded-2xl  tracking-tight leading-tight text-white/85 gap-10">
         <div className="md:w-1/2 w-full flex flex-col gap-10 p-5">
         <h4 className="text-4xl text-white">What We Do</h4>
