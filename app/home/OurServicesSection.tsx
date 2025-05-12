@@ -89,8 +89,8 @@ const OurServices = () => {
       {/* STACKED PINNING CONTAINER */}
       <div
         ref={containerRef}
-        className="relative"
-        style={{ height: `${(services.length * 100) - 20}vh` }}
+        className="relative h-fit"
+        
       >
         {services.map((service, index) => (
             <motion.div

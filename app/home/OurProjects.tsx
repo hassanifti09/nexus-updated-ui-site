@@ -92,8 +92,8 @@ const OurProjects = () => {
       {/* STACKED PINNING CONTAINER */}
       <div 
         ref={containerRef} 
-        className="relative"
-        style={{ height: `${(projects.length * 100) - 20}vh` }}
+        className="relative h-fit"
+        
       >
         {projects.map((project, index) => {
           // Calculate scroll progress ranges for each item

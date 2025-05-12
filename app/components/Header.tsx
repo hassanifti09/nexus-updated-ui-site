@@ -5,6 +5,7 @@ import Button from './Button'
 import { Menu, X } from 'lucide-react'
 import Link from 'next/link';
 import NiceModal, { useModal } from '@ebay/nice-modal-react';
+import { createPortal } from "react-dom"
 
 // Services Modal Component
 const ServicesModal = NiceModal.create(() => {
@@ -22,9 +23,14 @@ const ServicesModal = NiceModal.create(() => {
   
   // Prevent scrolling when modal is open
   useEffect(() => {
+    // Only lock background scroll, allow modal content to scroll
+    const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    // Add a class to body to indicate modal is open (optional for further styling)
+    document.body.classList.add('modal-open');
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = originalOverflow;
+      document.body.classList.remove('modal-open');
     }
   }, []);
   
@@ -32,6 +38,7 @@ const ServicesModal = NiceModal.create(() => {
     <div 
       className={`fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex flex-col items-center justify-center p-8 ${modal.visible ? 'opacity-100' : 'opacity-0'}`}
       onClick={() => modal.hide()}
+      style={{ overflowY: 'auto', WebkitOverflowScrolling: 'touch', height: '100vh' }}
     >
       {/* Close button */}
       <button 
@@ -45,6 +52,7 @@ const ServicesModal = NiceModal.create(() => {
       <div 
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full"
         onClick={(e) => e.stopPropagation()}
+        style={{ overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}
       >
         {services.map((service, index) => (
           <Link 
@@ -86,9 +94,11 @@ const ServicesModal = NiceModal.create(() => {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   // Handle scroll lock when menu is open
   useEffect(() => {
+    setMounted(true)
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden'
     } else {
@@ -146,7 +156,7 @@ const Header = () => {
       </div>
 
       {/* Full Screen Mobile Menu */}
-      {isMenuOpen && (
+      {mounted && isMenuOpen && typeof window !== 'undefined' && createPortal(
         <div className="md:hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-md">
           {/* Close button */}
           <button 
@@ -155,7 +165,6 @@ const Header = () => {
           >
             <X size={32} />
           </button>
-
           <div className="h-full flex flex-col items-center justify-center space-y-8 text-white font-light">
             <Link href="/" className="text-3xl hover:text-white/80">Home</Link>
             <Link href="/about" className="text-3xl hover:text-white/80">About</Link>
@@ -163,7 +172,10 @@ const Header = () => {
               className="text-3xl hover:text-white/80 cursor-pointer"
               onClick={() => {
                 setIsMenuOpen(false); // Close mobile menu
-                NiceModal.show(ServicesModal); // Show services modal
+                setTimeout(() => {
+                  document.body.style.overflow = 'unset'; // Re-enable scroll for modal
+                  NiceModal.show(ServicesModal);
+                }, 300); // Wait for menu to close
               }}
             >
               Services
@@ -173,7 +185,8 @@ const Header = () => {
               <Button variant="white" route="/contact" text="Contact"/>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   )
