@@ -82,6 +82,7 @@ const HeroServicesModal = NiceModal.create(() => {
                 href={service.path}
                 key={index}
                 className="group"
+                poster="@/assets/fallback.png"
                 style={{ viewTransitionName: `hero-service-card-${index}` }}
                 onClick={handleLinkClick} // Passes the corrected function
               >
@@ -149,9 +150,19 @@ const Hero = () => {
           muted={true}
           playsInline
           preload="auto"
+          poster="/assets/fallback.png"
           className="w-full h-full object-cover transform-gpu" // Original
           src="/assets/herovid.m4v" // Original
-        />
+          onError={(e) => {
+            const videoElement = e.currentTarget;
+            videoElement.src = "/assets/fallback.png";
+            videoElement.onerror = null; // Prevent infinite error loop
+            videoElement.style.objectFit = "cover";
+          }}
+        >
+          <source src="/assets/herovid.m4v" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div className="relative h-full z-10 flex flex-col justify-between p-3 md:p-5"> {/* Original */}
         <Header /> {/* Original */}
