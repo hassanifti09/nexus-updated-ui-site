@@ -70,7 +70,7 @@ const Body = () => {
         </div>
     </div>
     </div>
-    <div className="relative w-full my-10 min-h-screen max-h-screen">
+    <div className="relative w-full my-10 min-h-screen max-h-screen overflow-hidden">
     {/* Spline Background Layer */}
     <div className="absolute inset-0 z-0">
         <Spline

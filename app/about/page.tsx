@@ -9,6 +9,7 @@ import FaqSection from '../home/FaqSection';
 import OurStory from './OurStory';
 import KeyMetrics from './KeyMetrics';
 import OurValues from './OurValues';
+import OurTeam from './OurTeam';
 
 const page = () => {
   return (
@@ -23,6 +24,7 @@ const page = () => {
     <div id="our-values">
     <OurValues />
     </div>
+    <OurTeam />
     <FaqSection />
     <Footer />
     </>

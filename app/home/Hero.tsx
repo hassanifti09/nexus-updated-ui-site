@@ -82,7 +82,6 @@ const HeroServicesModal = NiceModal.create(() => {
                 href={service.path}
                 key={index}
                 className="group"
-                poster="@/assets/fallback.png"
                 style={{ viewTransitionName: `hero-service-card-${index}` }}
                 onClick={handleLinkClick} // Passes the corrected function
               >
