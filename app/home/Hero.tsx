@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect, useRef, useId } from 'react';
+import React, { useEffect, useId } from 'react';
 import Image from 'next/image'; // Added for Modal
 import Link from 'next/link'; // Added for Modal
 import NiceModal, { useModal } from '@ebay/nice-modal-react'; // Added for Modal
 import Header from '../components/Header';
 import Button from '../components/Button'; // Keep import for OTHER buttons
+import LightPillar from '../../components/ui/Lightpillar';
 
 // --- RECREATED Services Data ---
 const services = [
@@ -109,21 +110,6 @@ const HeroServicesModal = NiceModal.create(() => {
 // --- Original Hero Component ---
 // With button correctly styled using classes from Button component
 const Hero = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  // Original video effect - UNCHANGED
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      setTimeout(() => {
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(() => { /* Autoplay might still be blocked */ });
-        }
-      }, 500);
-    }
-  }, []);
-
   // Register the RECREATED modal specific to Hero
   const heroModalId = 'hero-services-modal';
   useEffect(() => {
@@ -141,27 +127,20 @@ const Hero = () => {
   // Uses standard <button> for "Services" with CORRECT styles
   return (
     <div className="relative m-3 md:m-5 rounded-2xl overflow-hidden h-fit md:h-[95vh]"> {/* Original */}
-      <div className="absolute inset-0 z-0 overflow-hidden"> {/* Original */}
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted={true}
-          playsInline
-          preload="auto"
-          poster="/assets/fallback.png"
-          className="w-full h-full object-cover transform-gpu" // Original
-          src="/assets/herovid.m4v" // Original
-          onError={(e) => {
-            const videoElement = e.currentTarget;
-            videoElement.src = "/assets/fallback.png";
-            videoElement.onerror = null; // Prevent infinite error loop
-            videoElement.style.objectFit = "cover";
-          }}
-        >
-          <source src="/assets/herovid.m4v" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <LightPillar
+          topColor="#5227FF"
+          bottomColor="#FF9FFC"
+          intensity={1}
+          rotationSpeed={1.2}
+          glowAmount={0.007}
+          pillarWidth={4.4}
+          pillarHeight={0.4}
+          noiseIntensity={1}
+          pillarRotation={145}
+          interactive={false}
+          mixBlendMode="normal"
+        />
       </div>
       <div className="relative h-full z-10 flex flex-col justify-between p-3 md:p-5"> {/* Original */}
         <Header /> {/* Original */}
